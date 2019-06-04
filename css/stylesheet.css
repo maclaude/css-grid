@@ -1,0 +1,38 @@
+#container {
+  border: 1px solid #000;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [col1] 25% [col2] 25% [col3] 25% [col4] 25%;
+  grid-template-rows: [row1] 25% [row2] 25% [row3] 25% [row4] 25%;
+  grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+.item {
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.item-a {
+  background-color: yellow;
+  grid-area: header;
+}
+
+.item-b {
+  background-color: green;
+  color: white;
+  grid-area: main;
+}
+
+.item-c {
+  background-color: aqua;
+  grid-area: sidebar;
+}
+
+.item-d {
+  background-color: red;
+  grid-area: footer;
+}
